@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="main flex justify-center ">
       <div className="2xl:container w-full h-full flex:col justify-center ">
-        <div className="w-full h-[600px] mb-8  bg-cover bg-center bg-no-repeat relative ">
+        <div className="w-full h-screen mb-8  bg-cover bg-center bg-no-repeat relative border border-red-500">
           <div>
-            <Image className="w-full absolute" src={home.Background} alt="bg" />
+            <Image className="w-full h-screen absolute" src={home.Background} alt="bg" />
           </div>
           <div className="absolute top-56 flex items-center justify-center w-full h-fit">
             <div className="flex flex-col items-center justify-center ">
