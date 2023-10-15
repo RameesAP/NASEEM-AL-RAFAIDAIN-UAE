@@ -12,7 +12,7 @@ export default function Home() {
           <div>
             <Image className="w-full h-screen absolute" src={home.Background} alt="bg" />
           </div>
-          <div className="absolute top-56 flex items-center justify-center w-full h-fit">
+          <div className="absolute top-36 flex items-center justify-center w-full h-fit">
             <div className="flex flex-col items-center justify-center ">
               <div className="font-[700] text-[65px] text-[#32286E] ">
                 WELCOME TO
