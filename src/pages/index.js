@@ -17,7 +17,7 @@ export default function Home() {
             />
           </div>
           <div className="absolute">
-            <Image className="" src={home.logo} alt="bgg" />
+            <Image className=""width={400} src={home.logo} alt="bgg" />
           </div>
           <div className="absolute top-36 flex items-center justify-center w-full h-fit ">
             <div className="flex flex-col items-center justify-center ">
