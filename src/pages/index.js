@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="main flex justify-center ">
       <div className="2xl:container w-full h-full flex:col justify-center ">
-        <div className="w-full h-screen bg-cover bg-center bg-no-repeat relative border border-red-500">
+        <div className="w-full overflow-hidden h-screen bg-cover bg-center bg-no-repeat relative border border-red-500">
           <div>
             <Image className="w-full h-screen absolute" src={home.Background} alt="bg" />
           </div>
