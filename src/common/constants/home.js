@@ -1,4 +1,4 @@
-import Background from "@/assets/background.svg"
+import Background from "@/assets/back.svg"
 
 export default{
     Background,
