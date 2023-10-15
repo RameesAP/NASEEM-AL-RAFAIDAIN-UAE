@@ -1,7 +1,8 @@
 import Background from "@/assets/back.svg"
-import Arab from "@/assets/arab.png"
+import logo from "@/assets/mainpglogo.png"
+
 
 export default{
     Background,
-    Arab
+    logo
 };
