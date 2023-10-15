@@ -32,8 +32,10 @@ export default function Home() {
           <div className="absolute bottom-0 w-full ">
             <div className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat  ">
               <div className=" relative">
-              <div className="absolute top-7  left-96 px-4  p-2 rounded-full w-fit  bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] text-white hover:cursor-pointer">EXPLORE NOW</div>
-                <Image className="" src={home.tireandbat} alt="mainpg" />
+                <div className="absolute top-7  left-72 px-4  p-2 rounded-full w-fit  bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] text-white hover:cursor-pointer">
+                  EXPLORE NOW
+                </div>
+                <Image className=""width={700}  src={home.tireandbat} alt="mainpg" />
               </div>
             </div>
             <div className=""></div>
