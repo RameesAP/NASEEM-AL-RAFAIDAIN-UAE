@@ -1,15 +1,19 @@
-import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
+import React from "react";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
   return (
     <div>
-        <Nav />
-            {children}
-        <Footer />
+      <div className="main flex justify-center ">
+        <div className="2xl:container w-full h-full flex:col justify-center ">
+          <Nav />
+          {children}
+          <Footer />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import home from "@/common/constants/home";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export default function Home() {
           <div>
             <Image
               className="w-full h-screen absolute"
-              src={home.Background}
+              src={home.BackgroundLogo}
               alt="bg"
             />
           </div>
@@ -32,9 +33,9 @@ export default function Home() {
           <div className="absolute bottom-0 w-full ">
             <div className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat  ">
               <div className=" relative">
-                <div className="absolute top-7  left-72 px-4  p-2 rounded-full w-fit  bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] text-white hover:cursor-pointer">
+                <Link href="/home" className="absolute top-7  left-72 px-4  p-2 rounded-full w-fit  bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] text-white hover:cursor-pointer">
                   EXPLORE NOW
-                </div>
+                </Link>
                 <Image className=""width={700}  src={home.tireandbat} alt="mainpg" />
               </div>
             </div>
