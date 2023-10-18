@@ -4,13 +4,15 @@ import Footer from "./Footer";
 
 const MainLayout = ({ children }) => {
   return (
-    <main>
- 
+    <div>
+      <div className="main flex justify-center ">
+        <div className="2xl:container w-full h-full flex:col justify-center ">
           <Nav />
           {children}
           <Footer />
-     
-    </main>
+        </div>
+      </div>
+    </div>
   );
 };
 
