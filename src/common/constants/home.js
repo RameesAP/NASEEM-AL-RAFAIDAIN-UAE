@@ -5,6 +5,7 @@ import tireandbat from "@/assets/tb.png"
 import NavLogo from "@/assets/mainpglogo.png"
 import desk2 from "@/assets/desk2.png"
 import tirebat from "@/assets/tirebat.png"
+import carocel1 from "@/assets/carosel1.png"
 
 
 export default{
@@ -14,6 +15,7 @@ export default{
     Background,
     NavLogo,
     desk2,
-    tirebat
+    tirebat,
+    carocel1
 
 };

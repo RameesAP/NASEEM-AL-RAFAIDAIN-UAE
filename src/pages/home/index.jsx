@@ -1,6 +1,7 @@
 import home from "@/common/constants/home";
 import MainLayout from "@/common/layouts/MainLayout";
 import Desktop3 from "@/components/Home/Desktop3";
+import Desktop4 from "@/components/Home/Desktop4";
 import Image from "next/image";
 import React from "react";
 
@@ -39,6 +40,7 @@ const index = () => {
       </div>
 
       <Desktop3 />
+      <Desktop4 />
     </MainLayout>
   );
 };
