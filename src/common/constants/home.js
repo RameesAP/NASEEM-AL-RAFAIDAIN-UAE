@@ -3,6 +3,8 @@ import Background from "@/assets/background.svg"
 import logo from "@/assets/mainpglogo.png"
 import tireandbat from "@/assets/tb.png"
 import NavLogo from "@/assets/mainpglogo.png"
+import desk2 from "@/assets/desk2.png"
+import tirebat from "@/assets/tirebat.png"
 
 
 export default{
@@ -10,6 +12,8 @@ export default{
     logo,
     tireandbat,
     Background,
-    NavLogo
+    NavLogo,
+    desk2,
+    tirebat
 
 };

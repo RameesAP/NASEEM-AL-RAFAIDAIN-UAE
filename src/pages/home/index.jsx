@@ -5,18 +5,38 @@ import React from "react";
 
 const index = () => {
   return (
-        <MainLayout>
-          <div className="w-full overflow-hidden h-screen bg-cover bg-center bg-no-repeat relative ">
-            <div>
-              <Image
-                className="w-full h-screen absolute"
-                src={home.Background}
-                alt="bg"
-              />
-            </div>
-            <div className="absolute end-0 w-[40%] h-full bg-gradient-to-r from-red-500  to-red-200"></div>
+    <MainLayout>
+      <div className="w-full overflow-hidden h-screen bg-cover bg-center bg-no-repeat relative ">
+        <div>
+          <Image
+            className="w-full h-screen absolute"
+            src={home.Background}
+            alt="bg"
+          />
+        </div>
+        <div className="">
+          <Image
+            width={500}
+            height={500}
+            className="absolute top-40 left-28"
+            src={home.desk2}
+            alt="bbb"
+          />
+        </div>
+
+        <div className="absolute end-0 w-[40%] h-full bg-gradient-to-r from-red-500  to-red-200">
+          <div className="">
+            <Image
+              width={500}
+              height={500}
+              className="absolute top-36 right-11"
+              src={home.tirebat}
+              alt="bbb"
+            />
           </div>
-        </MainLayout>
+        </div>
+      </div>
+    </MainLayout>
   );
 };
 
