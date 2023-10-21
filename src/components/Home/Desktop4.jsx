@@ -1,13 +1,10 @@
+"use client";
 
+import { Carousel } from "flowbite-react";
 
 import home from "@/common/constants/home";
 import Image from "next/image";
 import React from "react";
-import imageess from "@/assets/carosel1.png";
-
-
-
-
 
 const Desktop4 = () => {
   return (
@@ -20,9 +17,23 @@ const Desktop4 = () => {
             alt="bg"
           />
         </div>
-        <div className="absolute border border-green-500 w-full h-[800px] mt-20 p-6">
-          <div className="border border-red-500 w-full h-full">
+        <div className="absolute  w-full h-[800px] mt-20 p-6">
+          <div className=" w-full h-full">
+            {/* ----------------- */}
 
+            <Carousel>
+              <Image
+                alt="Description of the image 1"
+                src={home.homeCaroseljpg}
+                
+              />
+              <Image
+                alt="Description of the image 2"
+                src={home.homecaroselsec}
+              />
+            </Carousel>
+
+            {/* -------------------- */}
           </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ import NavLogo from "@/assets/mainpglogo.png"
 import desk2 from "@/assets/desk2.png"
 import tirebat from "@/assets/tirebat.png"
 import carocel1 from "@/assets/carosel1.png"
+import homeCaroseljpg from "@/assets/homeCaroseljpg.jpg"
+import homecaroselsec from "@/assets/carocel2jpg.jpg"
 
 
 export default{
@@ -16,6 +18,9 @@ export default{
     NavLogo,
     desk2,
     tirebat,
-    carocel1
+    carocel1,
+    homeCaroseljpg,
+    homecaroselsec
+
 
 };
