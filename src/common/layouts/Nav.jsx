@@ -1,5 +1,6 @@
 import Image from "next/image";
 import home from "../constants/home";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -13,13 +14,13 @@ const Nav = () => {
           </div>
           <div className="w-[60%] flex items-center gap-10 px-7 ">
             <div className="ml-20 p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white ">
-              Home
+             <Link href="/home">Home</Link> 
             </div>
             <div className=" p-1 px-5 rounded-full flex justify-center items-center bg-slate-700 text-white">
-              Products
+              <Link href="/products">Products</Link>
             </div>
             <div className=" p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white">
-              About Us
+             <Link href="/about"> About Us</Link>
             </div>
             <div className=" p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white">
               Gallery
