@@ -18,7 +18,7 @@ export default function index() {
             </div>
             <div className='absolute py-24 px-14'>
              <div class="grid grid-flow-col grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4">
-              <form action="" className='p'>
+              <form action="" className='p z-20'>
                 <div class="flex flex-wrap ">
                   <div class="w-full">
                       <label class="block uppercase tracking-wide text-white text-xs font-bold " for="grid-password">
