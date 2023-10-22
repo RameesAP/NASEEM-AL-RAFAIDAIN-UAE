@@ -23,10 +23,10 @@ const Nav = () => {
              <Link href="/about"> About Us</Link>
             </div>
             <div className=" p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white">
-              Gallery
+             <Link href="/gallery"> Gallery</Link>
             </div>
             <div className=" p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white">
-              Contact
+             <Link href="/contact"> Contact</Link>
             </div>
           </div>
         </div>
