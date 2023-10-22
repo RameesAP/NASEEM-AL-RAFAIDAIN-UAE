@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import product from "@/common/constants/product";
 import MainLayout from "@/common/layouts/MainLayout";
+import Link from "next/link";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +25,7 @@ const products = () => {
             <div className="absolute top-20  flex items-center justify-center w-full h-fit ">
                     <div className="flex  items-center justify-center  ">
                         <div className="font-[700] text-[65px] text-[#32286E] leading-3 items-center">
-                            Products
+                            Product
                         </div>
                     </div>
                     
@@ -43,10 +44,10 @@ const products = () => {
                 <Image className='' src= {product.Battery} alt="" />
                 <div className='absolute flex items-center bottom-24 right-80'>
                 <div class="rounded-md shadow">
-                    <a href=""
+                    <Link href="/"
                      class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                        TIRES
-                    </a>
+                    </Link>
                  </div>
                 </div>
               </div>
