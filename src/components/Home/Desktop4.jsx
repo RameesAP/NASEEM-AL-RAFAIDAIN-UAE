@@ -9,7 +9,7 @@ import React from "react";
 const Desktop4 = () => {
   return (
     <div>
-      <div className="w-full overflow-hidden h-screen bg-cover bg-center bg-no-repeat relative ">
+      <div className="w-full overflow-hidden h-[800px] bg-cover bg-center bg-no-repeat relative ">
         <div>
           <Image
             className="w-full h-screen absolute"
@@ -17,8 +17,8 @@ const Desktop4 = () => {
             alt="bg"
           />
         </div>
-        <div className="absolute  w-full h-[800px] mt-20 p-6">
-          <div className=" w-full h-full">
+        <div className="absolute  w-full h-[800px]  p-6 ">
+          <div className=" w-full h-full ">
             {/* ----------------- */}
 
             <Carousel>
