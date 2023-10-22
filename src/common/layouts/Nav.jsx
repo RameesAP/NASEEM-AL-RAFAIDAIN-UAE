@@ -12,7 +12,7 @@ const Nav = () => {
             </div>
           </div>
           <div className="w-[60%] flex items-center gap-10 px-7 ">
-            <div className="ml-20 p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white">
+            <div className="ml-20 p-1 px-4 rounded-full flex justify-center items-center bg-slate-700 text-white ">
               Home
             </div>
             <div className=" p-1 px-5 rounded-full flex justify-center items-center bg-slate-700 text-white">
