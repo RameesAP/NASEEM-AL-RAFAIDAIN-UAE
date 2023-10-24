@@ -1,9 +1,12 @@
-import React from 'react'
+import MainLayout from "@/common/layouts/MainLayout";
+import React from "react";
 
 const batteries = () => {
   return (
-    <div>batteries</div>
-  )
-}
+    <MainLayout>
+      <div>batteries</div>
+    </MainLayout>
+  );
+};
 
-export default batteries
+export default batteries;

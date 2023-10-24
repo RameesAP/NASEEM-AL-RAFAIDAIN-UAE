@@ -1,9 +1,12 @@
-import React from 'react'
+import MainLayout from "@/common/layouts/MainLayout";
+import React from "react";
 
 const tires = () => {
   return (
-    <div>tires</div>
-  )
-}
+    <MainLayout>
+      <div>tires</div>
+    </MainLayout>
+  );
+};
 
-export default tires
+export default tires;
