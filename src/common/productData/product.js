@@ -1,7 +1,9 @@
-export const doctors = [
+import battery from "../constants/battery";
+
+export const battery = [
     {
         id: "01",
-        photo: doctorImg01,
+        photo: battery,
         BRAND : "INDIGO-R",
         SIZE: "80D26L  (NS70L)",
         TYPE: "CALCIUM MAINTENANCE FREE BATTERY ",
