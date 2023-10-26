@@ -16,6 +16,7 @@ import { Carousel } from "flowbite-react";
 import { battery } from "@/common/productData/battery";
 
 import bt1 from "@/assets/Battery/BTR/28.png";
+import Link from "next/link";
 
 const batteries = () => {
   return (
@@ -71,9 +72,11 @@ const batteries = () => {
                         <div className="text-white text-xs font-bold">
                           {item.DIMENSION}
                         </div>
-                        <div className="text-sm font-bold mt-3 text-blue-500">
-                          Explore more
-                        </div>
+                        <Link href={`/products/batteries/${item.id}`}>
+                          <div className="text-sm font-bold mt-3 text-blue-500">
+                            Explore more
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </SwiperSlide>
