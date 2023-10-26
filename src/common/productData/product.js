@@ -137,6 +137,7 @@ export const battery = [
         TERMINAL_CLASSIFICATION:	"STANDARD AND SMALL"	,
         HOLD_DOWN:	"WITHOUT AND WITH BASE HOLD DOW",                
     },
+];
     //  {        
                 
                 
@@ -154,4 +155,4 @@ export const battery = [
                 
     // }
  
-  ];
+ 
