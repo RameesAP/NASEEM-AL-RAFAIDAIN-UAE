@@ -2,17 +2,20 @@ import MainLayout from "@/common/layouts/MainLayout";
 import React from "react";
 import Image from "next/image";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
 // import required modules
 import { Pagination } from "swiper/modules";
-import battery from "@/common/constants/battery";
 
-import bt1 from "@/assets/Battery/BTR/28.png"
+import { Carousel } from "flowbite-react";
+import { battery } from "@/common/productData/battery";
+
+import bt1 from "@/assets/Battery/BTR/28.png";
 
 const batteries = () => {
   return (
@@ -32,8 +35,62 @@ const batteries = () => {
             </div>
           </div>
           <div className="absolute top-28 w-full h-[500px] border border-yellow-200">
-            <div className="border border-blue-400 w-full h-full flex items-center justify-center gap-5 overflow-x-scroll">
-              {/* <div className="border border-yellow-200 w-[250px] h-[400px] flex flex-col">
+            <div className="border border-blue-400 w-full h-full flex  justify-center pl-52 pr-52">
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper "
+              >
+                {battery.map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <div className="border border-yellow-200 w-[250px] h-[400px] flex flex-col ">
+                      <div className="w-full h-[50%] border border-green-500 flex items-center justify-center">
+                        <Image
+                          className="border border-orange-500"
+                          src={item.photo}
+                          alt=""
+                        />
+                      </div>
+                      <div className="w-full h-[50%] border border-green-500 rounded-lg bg-gradient-to-r from-black via-gray-600 to-gray-400 p-3">
+                        <div className="text-white text-xl font-bold">
+                          {item.BRAND}
+                        </div>
+                        <div className="text-white text-xs font-bold">
+                          {item.SIZE}
+                        </div>
+                        <div className="text-white text-xs font-bold">
+                          {item.AMPERE}
+                        </div>
+                        <div className="text-white text-xs font-bold">
+                          {item.TYPE}
+                        </div>
+                        <div className="text-white text-xs font-bold">
+                          {item.DIMENSION}
+                        </div>
+                        <div className="text-sm font-bold mt-3 text-blue-500">
+                          Explore more
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </div>
+    </MainLayout>
+  );
+};
+
+export default batteries;
+
+{
+  /* <div className="border border-yellow-200 w-[250px] h-[400px] flex flex-col">
                 <div className="w-full h-[50%] border border-green-500 flex items-center justify-center">
                   <Image
                     className="border border-orange-500"
@@ -59,47 +116,40 @@ const batteries = () => {
                     Explore more
                   </div>
                 </div>
-              </div> */}
-              {battery.map((item) => (
-                <div
-                  key={item.id}
-                  className="border border-yellow-200 w-[250px] h-[400px] flex flex-col"
-                >
-                  <div className="w-full h-[50%] border border-green-500 flex items-center justify-center">
-                    <Image
-                      className="border border-orange-500"
-                      src={item.photo}
-                      alt=""
-                    />
-                  </div>
-                  <div className="w-full h-[50%] border border-green-500 rounded-lg bg-gradient-to-r from-black via-gray-600 to-gray-400 p-3">
-                    <div className="text-white text-3xl font-bold">
-                      {item.BRAND}
-                    </div>
-                    <div className="text-white text-sm font-bold">
-                      {item.SIZE}
-                    </div>
-                    <div className="text-white text-sm font-bold">
-                      {item.AMPERE}
-                    </div>
-                    <div className="text-white text-sm font-bold">
-                      {item.TYPE}
-                    </div>
-                    <div className="text-white text-sm font-bold">
-                      {item.DIMENSION}
-                    </div>
-                    <div className="text-sm font-bold mt-3 text-blue-500">
-                      Explore more
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </MainLayout>
-  );
-};
+              </div> */
+}
 
-export default batteries;
+// {battery.map((item) => (
+//   <div
+//     key={item.id}
+//     className="border border-yellow-200 w-[250px] h-[400px] flex flex-col "
+//   >
+//     <div className="w-full h-[50%] border border-green-500 flex items-center justify-center">
+//       <Image
+//         className="border border-orange-500"
+//         src={item.photo}
+//         alt=""
+//       />
+//     </div>
+//     <div className="w-full h-[50%] border border-green-500 rounded-lg bg-gradient-to-r from-black via-gray-600 to-gray-400 p-3">
+//       <div className="text-white text-xl font-bold">
+//         {item.BRAND}
+//       </div>
+//       <div className="text-white text-xs font-bold">
+//         {item.SIZE}
+//       </div>
+//       <div className="text-white text-xs font-bold">
+//         {item.AMPERE}
+//       </div>
+//       <div className="text-white text-xs font-bold">
+//         {item.TYPE}
+//       </div>
+//       <div className="text-white text-xs font-bold">
+//         {item.DIMENSION}
+//       </div>
+//       <div className="text-sm font-bold mt-3 text-blue-500">
+//         Explore more
+//       </div>
+//     </div>
+//   </div>
+// ))}
