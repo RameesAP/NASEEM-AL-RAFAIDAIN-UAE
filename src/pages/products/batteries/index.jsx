@@ -32,21 +32,21 @@ const batteries = () => {
             </div>
           </div>
           <div className="absolute top-28 w-full h-[450px] border border-yellow-200">
-           <div className="border border-blue-400 w-full h-full flex items-center justify-center gap-10">
-            <div className="border border-yellow-200 w-[250px] h-[400px] flex flex-col">
-              <div className="w-full h-[50%] border border-green-500 flex items-center justify-center">
-<Image className="border border-orange-500" src={bt1} alt=""/>
-              </div>
-              <div className="w-full h-[50%] border border-green-500 rounded-lg bg-gradient-to-r from-black via-gray-600 to-gray-400 p-3">
-                <div className=" text-white text-3xl font-bold">INDIGO - R</div>
-                <div className="text-white text-sm font-bold">80D26L (NS70L)</div>
-                <div className="text-white text-sm font-bold">70 AH</div>
-                <div className="text-white text-sm font-bold">CALCIUM MAINTENANCE FREE BATTERY</div>
-                <div className="text-white text-sm font-bold">280mm*175MM*200NM</div>
-                <div className=" text-sm font-bold mt-3 text-blue-500">Explore more</div>
+            <div className="border border-blue-400 w-full h-full flex items-center justify-center gap-10">
+              <div className="border border-yellow-200 w-[250px] h-[400px] flex flex-col">
+                <div className="w-full h-[50%] border border-green-500 flex items-center justify-center">
+                  <Image className="border border-orange-500" src={bt1} alt="" />
+                </div>
+                <div className="w-full h-[50%] border border-green-500 rounded-lg bg-gradient-to-r from-black via-gray-600 to-gray-400 p-3">
+                  <div className=" text-white text-3xl font-bold">INDIGO - R</div>
+                  <div className="text-white text-sm font-bold">80D26L (NS70L)</div>
+                  <div className="text-white text-sm font-bold">70 AH</div>
+                  <div className="text-white text-sm font-bold">CALCIUM MAINTENANCE FREE BATTERY</div>
+                  <div className="text-white text-sm font-bold">280mm*175MM*200NM</div>
+                  <div className=" text-sm font-bold mt-3 text-blue-500">Explore more</div>
+                </div>
               </div>
             </div>
-           </div>
           </div>
         </div>
       </div>

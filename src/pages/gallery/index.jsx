@@ -2,6 +2,10 @@ import gallery from '@/common/constants/gallery'
 import MainLayout from '@/common/layouts/MainLayout'
 import React from 'react'
 import Image from "next/image";
+//motion
+import { motion } from 'framer-motion'
+//variants
+import { fadeIn } from '@/vintage'
 
 
 
@@ -16,25 +20,35 @@ export default function index() {
                 alt="bg"
               />
             </div>
-            <div className="absolute top-10  flex items-center justify-center w-full h-fit ">
+            <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.5 }}
+            className="absolute top-10  flex items-center justify-center w-full h-fit ">
                 <div className="flex  items-center justify-center  ">
                     <div className="font-[700] text-[65px] text-[#32286E] leading-3 items-center">
                         Gallery
                     </div>
                 </div>      
-            </div>
+            </motion.div>
             
             <div>
        
       </div>
-      <div className="absolute   flex items-center justify-center w-full h-fit ">
+      <motion.div 
+      variants={fadeIn('zoomout', 0.3)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.5 }}
+      className="absolute   flex items-center justify-center w-full h-fit ">
                 <div className="flex items-center justify-center  ">
                     <div className="border border-none -top-14 h-[60vh] absolute w-[80%]">
                       <Image className='absolute ' src={gallery.ads} alt=""  />
                         
                     </div>
                 </div>      
-            </div>
+            </motion.div>
             
 
       <div className=" ">

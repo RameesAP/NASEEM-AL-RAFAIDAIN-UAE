@@ -2,6 +2,10 @@ import React from 'react'
 import MainLayout from '@/common/layouts/MainLayout'
 import aboutImg from '@/common/constants/about'
 import Image from 'next/image'
+//motion
+import { motion } from 'framer-motion'
+//variants
+import { fadeIn } from '@/vintage'
 
 const about = () => {
   return (
@@ -17,13 +21,23 @@ const about = () => {
       <div className="absolute end-0 w-[40%] h-screen bg-gradient-to-r from-red-500  to-red-200">
       </div>
       <div className=''>
-        <div className="flex items-center absolute">
+        <motion.div
+        variants={fadeIn('right', 0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.5 }}
+          className="flex items-center absolute">
           <h1 className="mt-0 text-5xl font-bold   px-44 py-12 leading-tight text-primary " >
             About Us
           </h1>
-        </div>
+        </motion.div>
 
-        <div className='absolute py-32 px-12  '>
+        <motion.div 
+        variants={fadeIn('up', 0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.5 }}
+         className='absolute py-32 px-12  '>
 
           <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
             <li class="flex items-center justify-between ">
@@ -42,14 +56,19 @@ const about = () => {
               </p>
             </li>
           </ul>
-        </div>
+        </motion.div>
 
 
       </div>
       <div className='absolute flex items-center justify-center top-[-130px] left-[120px]'>
-        <div className=''>
+        <motion.div 
+        variants={fadeIn('left', 0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.5 }}
+         className=''>
           <Image src={aboutImg.about} alt="" />
-        </div>
+        </motion.div>
       </div>
       <div className="absolute bottom-6 px-7 left flex items-center justify-start w-full h-fit ">
         <div className="flex justify-start">

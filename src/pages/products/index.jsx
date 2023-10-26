@@ -4,6 +4,10 @@ import { Inter } from "next/font/google";
 import product from "@/common/constants/product";
 import MainLayout from "@/common/layouts/MainLayout";
 import Link from "next/link";
+//motion
+import { motion } from 'framer-motion'
+//variants
+import { fadeIn } from '@/vintage'
 
 const inter = Inter({ subsets: ["latin"] });
 const products = () => {
@@ -18,7 +22,12 @@ const products = () => {
           />
         </div>
 
-        <div className="absolute w-[400px] h-[400px] top-28 left-36 ">
+        <motion.div 
+        variants={fadeIn('up', 0.2)} 
+        initial= 'hidden' 
+        whileInView={'show'} 
+        viewport={{once: false, amount:0.7  }} 
+         className="absolute w-[400px] h-[400px] top-28 left-36 ">
           <Image
             width={400}
             height={200}
@@ -34,10 +43,16 @@ const products = () => {
               </div>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         <div className="absolute end-0 w-[50%] h-full bg-gradient-to-r from-red-500  to-red-200 ">
-          <div className="absolute w-[400px] h-[400px] top-28 left-36  flex flex-col items-center">
+          <motion.div 
+          variants={fadeIn('up', 0.3)} 
+          initial= 'hidden' 
+          whileInView={'show'} 
+          viewport={{once: false, amount:0.7  }} 
+
+           className="absolute w-[400px] h-[400px] top-28 left-36  flex flex-col items-center">
             <Image
               width={200}
               height={200}
@@ -53,7 +68,7 @@ const products = () => {
                 </div>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

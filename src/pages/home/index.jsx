@@ -4,7 +4,10 @@ import Desktop3 from "@/components/Home/Desktop3";
 import Desktop4 from "@/components/Home/Desktop4";
 import Image from "next/image";
 import React from "react";
-
+//motion
+import { motion } from 'framer-motion'
+//variants
+import { fadeIn } from '@/vintage'
 const index = () => {
   return (
     <MainLayout>
@@ -16,7 +19,13 @@ const index = () => {
             alt="bg"
           />
         </div>
-        <div className="">
+        <motion.div
+        variants={fadeIn('right', 0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.5 }}
+         className="">
+            
           <Image
             width={500}
             height={500}
@@ -24,10 +33,15 @@ const index = () => {
             src={home.desk2}
             alt="bbb"
           />
-        </div>
+        </motion.div>
 
         <div className="absolute end-0 w-[40%] h-full bg-gradient-to-r from-red-500  to-red-200">
-          <div className="">
+          <motion.div
+          variants={fadeIn('left', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+           className="">
             <Image
               width={500}
               height={500}
@@ -35,7 +49,7 @@ const index = () => {
               src={home.tirebat}
               alt="bbb"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 

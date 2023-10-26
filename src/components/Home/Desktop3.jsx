@@ -1,6 +1,10 @@
 import home from "@/common/constants/home";
 import Image from "next/image";
 import React from "react";
+//motion
+import { motion } from 'framer-motion'
+//variants
+import { fadeIn } from '@/vintage'
 
 const Desktop3 = () => {
   return (
@@ -13,7 +17,12 @@ const Desktop3 = () => {
         />
       </div>
 
-      <div className="absolute w-[500px] h-[550px] top-40 left-36">
+      <motion.div
+      variants={fadeIn('right', 0.5)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.5 }}
+       className="absolute w-[500px] h-[550px] top-40 left-36">
         <h3 className="text-[#32286E] font-bold text-[50px]">OUR MISSION</h3>
         <div className="mb-5 font-medium">
           Our company's mission is to identify, anticipate and provide
@@ -36,10 +45,16 @@ const Desktop3 = () => {
           convenience with our best competitive prices, and where ever you need
           it to be.
         </div>
-      </div>
+      </motion.div>
 
       <div className="absolute end-0 w-[40%] h-full bg-gradient-to-r from-red-500  to-red-200">
-        <div className="">
+        <motion.div 
+        variants={fadeIn('left', 0.5)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.5 }}
+        
+        className="">
           <Image
             width={500}
             height={500}
@@ -47,7 +62,7 @@ const Desktop3 = () => {
             src={home.tirebat}
             alt="bbb"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

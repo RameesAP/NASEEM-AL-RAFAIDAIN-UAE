@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import home from "@/common/constants/home";
 import Link from "next/link";
-
+import { fadeIn } from "@/vintage"
+import { motion } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,27 +18,48 @@ export default function Home() {
               alt="bg"
             />
           </div>
-          <div className="absolute">
+          <motion.div
+          variants={fadeIn('up', 0.2)} 
+          initial= 'hidden' 
+          whileInView={'show'} 
+          viewport={{once: false, amount:0.7  }} 
+           className="absolute">
             <Image className=""width={400} src={home.logo} alt="bgg" />
-          </div>
+          </motion.div>
           <div className="absolute top-36 flex items-center justify-center w-full h-fit ">
             <div className="flex flex-col items-center justify-center ">
-              <div className="font-[700] text-[65px] text-[#32286E] ">
+              <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{once:false, amount:0.3}}
+              
+              className="font-[700] text-[65px] text-[#32286E] ">
                 WELCOME TO
-              </div>
-              <div className="font-[700] text-[140px] text-red-500">
+              </motion.div>
+              <motion.div 
+              variants={fadeIn('left', 0.5)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{once:false, amount:0.3}}
+               className="font-[700] text-[140px] text-red-500">
                 نسيم الرافدين
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="absolute bottom-0 w-full ">
             <div className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat  ">
-              <div className=" relative">
+              <motion.div
+              variants={fadeIn('left', 0.7)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}
+               className=" relative">
                 <Link href="/home" className="absolute top-7  left-72 px-4  p-2 rounded-full w-fit  bg-gradient-to-r from-[#004AAD] to-[#CB6CE6] text-white hover:cursor-pointer">
                   EXPLORE NOW
                 </Link>
                 <Image className=""width={700}  src={home.tireandbat} alt="mainpg" />
-              </div>
+              </motion.div>
             </div>
             <div className=""></div>
           </div>
