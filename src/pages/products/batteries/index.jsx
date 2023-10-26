@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import battery from "@/common/constants/battery";
 
-import bt1 from "@/assets/Battery/BTR/28.png"
+import bt1 from "@/assets/Battery/BTR/29.png"
 
 const batteries = () => {
   return (
